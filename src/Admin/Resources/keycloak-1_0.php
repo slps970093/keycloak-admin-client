@@ -1573,8 +1573,60 @@ return array(
             )
         ),
 
+        'setClientScopeAsOptional' => array(
+            'uri'         => 'admin/realms/{realm}/clients/{id}/optional-client-scopes/{clientScopeId}',
+            'description' => 'Set client scope as optional scope',
+            'httpMethod'  => 'PUT',
+            'parameters'  => array(
+                'realm' => array(
+                    'location'    => 'uri',
+                    'description' => 'The Realm name',
+                    'type'        => 'string',
+                    'required'    => true,
+                ),
+                'id' => array(
+                    'location'    => 'uri',
+                    'description' => 'id of client (not client-id)',
+                    'type'        => 'string',
+                    'required'    => true,
+                ),
+                'clientScopeId' => array(
+                    'location'    => 'uri',
+                    'description' => 'Client Scope Id',
+                    'type'        => 'string',
+                    'required'    => true,
+                ),
+            )
+        ),
+
         'removeClientScopeAsDefault' => array(
             'uri'         => 'admin/realms/{realm}/clients/{id}/default-client-scopes/{clientScopeId}',
+            'description' => 'Remove client scope from default scopes ',
+            'httpMethod'  => 'DELETE',
+            'parameters'  => array(
+                'realm' => array(
+                    'location'    => 'uri',
+                    'description' => 'The Realm name',
+                    'type'        => 'string',
+                    'required'    => true,
+                ),
+                'id' => array(
+                    'location'    => 'uri',
+                    'description' => 'id of client (not client-id)',
+                    'type'        => 'string',
+                    'required'    => true,
+                ),
+                'clientScopeId' => array(
+                    'location'    => 'uri',
+                    'description' => 'Client Scope Id',
+                    'type'        => 'string',
+                    'required'    => true,
+                ),
+            )
+        ),
+
+        'removeClientScopeAsOptional' => array(
+            'uri'         => 'admin/realms/{realm}/clients/{id}/optional-client-scopes/{clientScopeId}',
             'description' => 'Remove client scope from default scopes ',
             'httpMethod'  => 'DELETE',
             'parameters'  => array(

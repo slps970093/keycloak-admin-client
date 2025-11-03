@@ -96,6 +96,8 @@ use Keycloak\Admin\TokenStorages\RuntimeTokenStorage;
  * @method array getClientDefaultScopes(array $args = array()) { @command Keycloak getClientDefaultScopes }
  * @method array setClientScopeAsDefault(array $args = array()) { @command Keycloak setClientScopeAsDefault }
  * @method array removeClientScopeAsDefault(array $args = array()) { @command Keycloak removeClientScopeAsDefault }
+ * @method array setClientScopeAsOptional(array $args = array()) { @command Keycloak setClientScopeAsOptional }
+ * @method array removeClientScopeAsOptional(array $args = array()) { @command Keycloak removeClientScopeAsOptional }
  * @method array getClientExampleAccessToken(array $args = array()) { @command Keycloak getClientExampleAccessToken }
  * @method array getClientProtocolMappers(array $args = array()) { @command Keycloak getClientProtocolMappers }
  * @method array getClientAllowedRoleMappingsInContainer(array $args = array()) { @command Keycloak getClientAllowedRoleMappingsInContainer }

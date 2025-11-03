@@ -1,8 +1,4 @@
-[![Latest Version](https://img.shields.io/github/v/tag/MohammadWaleed/keycloak-admin-client.svg?style=flat-square)](https://github.com/MohammadWaleed/keycloak-admin-client/releases)
-
-[![Total Downloads](https://img.shields.io/packagist/dt/mohammad-waleed/keycloak-admin-client.svg?style=flat-square)](https://packagist.org/packages/mohammad-waleed/keycloak-admin-client)
-
-[![Donate](https://img.shields.io/badge/Paypal-Donate-blue?style=flat-square)](https://paypal.me/mbarghash?locale.x=en_US)
+fork this project <a href="">link</a>
 
 - [Introduction](#introduction)
 - [How to use](#how-to-use)
@@ -334,7 +330,9 @@ $client = KeycloakClient::factory([
 | Get the client secret                                                                                                                                                                                                         |              getClientSecret               |    ✔️     |
 | Get default client scopes.                                                                                                                                                                                                    |           getClientDefaultScopes           |    ✔️     |
 | Set client scope as default scope                                                                                                                                                                                             |          setClientScopeAsDefault           |    ✔️     |
+| Set client scope as optional scope                                                                                                                                                                                            |          setClientScopeAsOptional          |    ✔️     |
 | Remove client scope from default scopes                                                                                                                                                                                       |         removeClientScopeAsDefault         |    ✔️     |
+| Remove client scope from optional scopes                                                                                                                                                                                      |        removeClientScopeAsOptional         |    ✔️     |
 | Create JSON with payload of example access token                                                                                                                                                                              |        getClientExampleAccessToken         |    ✔️     |
 | Return list of all protocol mappers, which will be used when generating tokens issued for particular client.                                                                                                                  |          getClientProtocolMappers          |    ✔️     |
 | Get effective scope mapping of all roles of particular role container, which this client is defacto allowed to have in the accessToken issued for him.                                                                        |  getClientAllowedRoleMappingsInContainer   |    ✔️     |

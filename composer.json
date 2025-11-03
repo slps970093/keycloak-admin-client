@@ -1,5 +1,5 @@
 {
-    "name": "mohammad-waleed/keycloak-admin-client",
+    "name": "slps970093/keycloak-admin-client",
     "description": "Connect to keycloak admin api easily",
     "type": "library",
     "license": "MIT",
@@ -12,6 +12,9 @@
         "psr-4": {
             "Keycloak\\": "src/"
         }
+    },
+    "replace": {
+        "mohammad-waleed/keycloak-admin-client":"v0.38.*"
     },
     "authors": [
         {
